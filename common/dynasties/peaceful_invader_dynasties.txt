@@ -1,0 +1,6 @@
+# 王朝について
+7100017 = { # Playboy
+	name = "dynn_7100017_name"
+	culture = "french"
+    motto = "dynn_7100017_motto"
+}

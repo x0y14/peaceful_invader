@@ -1,0 +1,21 @@
+# 平和な侵略イベント
+# 参考(モンゴル侵攻イベント): common\scripted_effects\00_mongol_invasion_effects.txt
+
+
+# 領土を与える
+give_charles_land_effect = {
+    # todo: 初期スポーン地点のランダム化
+}
+
+# 当主の出現
+spawn_pi_charles_character_effect = {
+    # デバッグが用意になるようにまずはアイルランド南部デズモンドに出現させる
+    title:c_ormond.title_province = {
+        save_scope_as = pi_charles_birthplace
+    }
+    # todo: inversed_gender_equality
+    # todo: full_gender_equality
+    create_character = {
+
+    }
+}

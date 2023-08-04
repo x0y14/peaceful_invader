@@ -1,0 +1,13 @@
+# 家の紋章
+7100017 = { # Playboy
+	pattern="pattern__solid_designer.dds"
+	color1=blue_light
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=white
+		color2=yellow
+		color3=blue_light
+		texture="ce_panther.dds"
+	}
+}

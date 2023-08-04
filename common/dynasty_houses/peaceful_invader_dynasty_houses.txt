@@ -1,0 +1,5 @@
+# 家について
+house_playboy = { # Playboy
+	name = "dynasty_7100017_name"
+	dynasty = 7100017 # Playboy
+}
