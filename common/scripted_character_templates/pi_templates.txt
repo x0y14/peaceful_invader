@@ -1,0 +1,23 @@
+# todo: ステータスの微調整(今はチンギスハンのコピペ)
+pi_playboy_character_template = {
+    age = 16
+	dna = lyon_twin_dna_entry # ここのいじり方不明
+    gender = male
+	dynasty_house = house:house_bigdaddy # 分家でスポーンさせる
+    martial = 100
+	diplomacy = 100
+	intrigue = 100
+	stewardship = 100
+	prowess = 100
+	faith = faith:tengri_pagan
+	culture = culture:french
+	trait = ambitious
+	trait = diligent
+	trait = callous
+	trait = lifestyle_hunter
+	trait = education_martial_4
+	trait = flexible_leader
+	trait = open_terrain_expert
+	trait = athletic
+	random_traits = no
+}

@@ -1,0 +1,27 @@
+namespace = peaceful_invasion
+
+# おそらく全体のイベント
+# playboyの出現
+peaceful_invasion.0001 = {
+	scope = none
+	hidden = yes
+
+	trigger = {
+		NOT = { # Stop Temujin destroying a stronk Mongol player
+			any_player = {
+				THIS = culture:mongol.culture_head
+				realm_size >= 100
+			}
+		}
+	}
+
+	immediate = {
+		debug_log = "PI_Playboy appeared!"
+		debug_log_date = yes
+		spawn_pi_playboy_character_effect = yes
+		scope:pi_playboy = {
+			save_scope_as = story_owner # Do I really need to do this? Isn't it set automatically?
+			create_story = story_peaceful_invasion
+		}
+	}
+}

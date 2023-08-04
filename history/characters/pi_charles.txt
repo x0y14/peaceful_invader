@@ -1,12 +1,41 @@
 # 王朝の当主について
 999001 = { # Charles Playboy
-	name = "Charles"
+	name = "tom"
 	dna = lyon_twin_dna_entry
 	dynasty = 7100017 # Playboy
-	martial = 100
+	#dynasty_house = house_playboy
+	martial = 1
 	diplomacy = 1
-	intrigue = 100
-	stewardship = 100
+	intrigue = 1
+	stewardship = 1
+	religion = catholic	
+	culture = french
+	trait = diligent
+	trait = education_learning_4
+	trait = just
+	trait = twin
+	trait = physique_good_3
+	trait = intellect_good_3
+	trait = beauty_good_3
+	trait = shrewd
+	disallow_random_traits = yes
+	father = 999003
+	mother = 999004
+	846.7.29 = {
+		birth = yes
+	}
+}
+
+# 王朝の当主について
+999002 = { # Charles Playboy
+	name = "john"
+	dna = lyon_twin_dna_entry
+	dynasty = 7100017 # Playboy
+	#dynasty_house = house_bigdaddy
+	martial = 1
+	diplomacy = 1
+	intrigue = 1
+	stewardship = 1
 	religion = catholic	
 	culture = french
 	trait = diligent

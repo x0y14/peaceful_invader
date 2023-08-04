@@ -1,0 +1,43 @@
+# 参考: \common\on_action\yearly_on_actions.txt
+
+yearly_global_pulse = {
+	effect = {
+		# Peaceful Invasion
+		# todo: 設定で出現しないように
+		if = {
+			limit = {
+				current_date >= 867.1.1
+				current_date < 1250.1.1
+				NOT = { has_global_variable = playboy_have_appeared }
+			}
+			random = {
+				chance = pi_playboy_appearance_base_chance
+				modifier = {
+					add = 9
+					current_date > 900.1.1
+				}
+				modifier = {
+					add = 10
+					current_date > 901.1.1
+				}
+				modifier = {
+					add = 20
+					current_date > 902.1.1
+				}
+				modifier = {
+					add = 30
+					current_date > 903.1.1
+				}
+				set_global_variable = {
+					name = playboy_have_appeared
+					value = yes
+				}
+				debug_log = "Attempting to spawn playboy invasion within 240 days"
+				trigger_event = {
+					id = peaceful_invasion.0001
+					days = { 2 240 }
+				}
+			}
+		}
+	}
+}

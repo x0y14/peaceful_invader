@@ -11,3 +11,10 @@
 		texture="ce_panther.dds"
 	}
 }
+
+house_bigdaddy = {
+	pattern="temp_pattern_bendy_special.dds"
+	color1=blue_light
+	color2=white
+	color3=red
+}

@@ -1,0 +1,5 @@
+# おそらく行動指針レベルのイベント
+
+story_peaceful_invasion = {
+	
+}

@@ -3,19 +3,56 @@
 
 
 # 領土を与える
-give_charles_land_effect = {
-    # todo: 初期スポーン地点のランダム化
+give_playboy_land_effect = {
+	# todo: 初期スポーン地点のランダム化
+	save_scope_as = pi_playboy_playboy
+
+	create_title_and_vassal_change = {
+		type = conquest
+		save_scope_as = pi_title_change
+		add_claim_on_loss = no # 領土を失ったときに請求権をつけるか?だと思われる
+	}
+	title:c_desmond = {
+		change_title_holder = {
+			holder = scope:pi_playboy_playboy
+			change = scope:pi_title_change
+		}
+	}
+	resolve_title_and_vassal_change = scope:pi_title_change
+	capital_county = { change_county_control = 100 }
 }
 
 # 当主の出現
-spawn_pi_charles_character_effect = {
-    # デバッグが用意になるようにまずはアイルランド南部デズモンドに出現させる
-    title:c_ormond.title_province = {
-        save_scope_as = pi_charles_birthplace
-    }
-    # todo: inversed_gender_equality
-    # todo: full_gender_equality
-    create_character = {
-
-    }
+spawn_pi_playboy_character_effect = {
+	# デバッグが容易になるようにまずはアイルランド南部デズモンドに出現させる
+	title:c_desmond.title_province = {
+		save_scope_as = pi_playboy_birthplace
+	}
+	# todo: inversed_gender_equality
+	# todo: full_gender_equality
+	create_character = {
+		name = "Charles"
+		dna = lyon_twin_dna_entry
+		location = scope:pi_playboy_birthplace
+		template = pi_playboy_character_template
+		save_scope_as = pi_playboy
+	}
+	scope:pi_playboy = {
+		# 100年間　病気に対する免疫を与える
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 100
+		}
+		give_playboy_land_effect = yes
+		add_gold = 9999
+		dynasty = {
+			add_dynasty_prestige_level = 6
+			add_dynasty_prestige = 10000
+			add_dynasty_perk = fp2_coterie_legacy_1
+			add_dynasty_perk = fp2_coterie_legacy_2
+			add_dynasty_perk = fp2_coterie_legacy_3
+			add_dynasty_perk = fp2_coterie_legacy_4
+			add_dynasty_perk = fp2_coterie_legacy_5
+		}
+	}
 }

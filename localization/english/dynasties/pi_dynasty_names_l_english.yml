@@ -1,3 +1,5 @@
 ﻿l_english:
- dynn_7100017_name: "Playboy" # 王朝名
- dynn_7100017_motto: "Marry"  # 王朝のモットー
+ dynn_Playboy: "Playboy" # 本家
+ dynn_Playboy_motto: "Marry"  # 王朝のモットー
+ dynn_Bigdaddy: "Bigdaddy" # 分家
+ dynn_Bigdaddy_motto: "Prosperity"
