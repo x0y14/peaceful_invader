@@ -19,9 +19,13 @@ peaceful_invasion.0001 = {
 		debug_log = "PI_Playboy appeared!"
 		debug_log_date = yes
 		spawn_pi_playboy_character_effect = yes
+		set_global_variable = {
+			name = playboy_have_appeared
+			value = yes
+		}
 		scope:pi_playboy = {
 			save_scope_as = story_owner # Do I really need to do this? Isn't it set automatically?
-			create_story = story_peaceful_invasion
+			create_story = story_peaceful_invasion # スポーン時に開始されるストーリー(イベントの集合体?)
 		}
 	}
 }
