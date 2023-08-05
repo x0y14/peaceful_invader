@@ -27,10 +27,18 @@ pi_playboy_character_template = {
 pi_playboy_father_character_template = {
 	age = 30
 	gender = male
+	dynasty_house = house:house_playboy
 }
 
 # Playboyの母
 pi_playboy_mother_character_template = {
 	age = 30
 	gender = female
+}
+
+# Playboyの兄妹
+pi_playboy_sister_character_template = {
+	age = 16
+	gender = female
+	dynasty_house = house:house_bigdaddy
 }
