@@ -30,13 +30,29 @@ spawn_pi_playboy_character_effect = {
 	}
 	# todo: inversed_gender_equality
 	# todo: full_gender_equality
+
+	create_character = {
+		template = pi_playboy_father_character_template
+		name = "PI FATHER"
+		employer = scope:pi_playboy
+		save_scope_as = pi_father
+	}
+	create_character = {
+		template = pi_playboy_mother_character_template
+		name = "PI MOTHER"
+		employer = scope:pi_playboy
+		save_scope_as = pi_mother
+	}
+
 	create_character = {
 		name = "Charles"
-		dna = lyon_twin_dna_entry
 		location = scope:pi_playboy_birthplace
 		template = pi_playboy_character_template
+		father = scope:pi_father
+		mother = scope:pi_mother
 		save_scope_as = pi_playboy
 	}
+
 	scope:pi_playboy = {
 		# 100年間　病気に対する免疫を与える
 		add_character_flag = {
@@ -55,4 +71,8 @@ spawn_pi_playboy_character_effect = {
 			add_dynasty_perk = fp2_coterie_legacy_5
 		}
 	}
+}
+
+# 出現した際の副次的な処理
+spawn_pi_playboy_court_effect = {
 }

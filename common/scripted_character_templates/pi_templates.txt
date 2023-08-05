@@ -1,4 +1,5 @@
 # todo: ステータスの微調整(今はチンギスハンのコピペ)
+# Playboy
 pi_playboy_character_template = {
     age = 16
 	dna = lyon_twin_dna_entry # ここのいじり方不明
@@ -20,4 +21,16 @@ pi_playboy_character_template = {
 	trait = open_terrain_expert
 	trait = athletic
 	random_traits = no
+}
+
+# Playboyの父
+pi_playboy_father_character_template = {
+	age = 30
+	gender = male
+}
+
+# Playboyの母
+pi_playboy_mother_character_template = {
+	age = 30
+	gender = female
 }
