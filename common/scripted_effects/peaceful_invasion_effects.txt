@@ -31,15 +31,17 @@ spawn_pi_playboy_character_effect = {
 	# todo: inversed_gender_equality
 	# todo: full_gender_equality
 
+	# Create Father
 	create_character = {
+		name = "Otto"
 		template = pi_playboy_father_character_template
-		name = "PI FATHER"
 		employer = scope:pi_playboy
 		save_scope_as = pi_father
 	}
+	# Create Mother
 	create_character = {
+		name = "Maria"
 		template = pi_playboy_mother_character_template
-		name = "PI MOTHER"
 		employer = scope:pi_playboy
 		save_scope_as = pi_mother
 	}
@@ -61,6 +63,7 @@ spawn_pi_playboy_character_effect = {
 		}
 		give_playboy_land_effect = yes
 		add_gold = 9999
+		spawn_pi_playboy_court_effect = yes
 		dynasty = {
 			add_dynasty_prestige_level = 6
 			add_dynasty_prestige = 10000
@@ -75,4 +78,53 @@ spawn_pi_playboy_character_effect = {
 
 # 出現した際の副次的な処理
 spawn_pi_playboy_court_effect = {
+	# Create Sister_1
+	create_character = {
+		name = "PI Sis1"
+		template = pi_playboy_sister_character_template
+		father = scope:pi_father
+		mother = scope:pi_mother
+		employer = scope:pi_playboy
+		save_scope_as = pi_sister1
+		
+	}
+	# Create Sister_2
+	create_character = {
+		name = "PI Sis2"
+		template = pi_playboy_sister_character_template
+		father = scope:pi_father
+		mother = scope:pi_mother
+		employer = scope:pi_playboy
+		save_scope_as = pi_sister2
+	}
+	# Create Sister_3
+	create_character = {
+		name = "PI Sis3"
+		template = pi_playboy_sister_character_template
+		father = scope:pi_father
+		mother = scope:pi_mother
+		employer = scope:pi_playboy
+		save_scope_as = pi_sister3
+	}
+	# Create Sister_4
+	create_character = {
+		name = "PI Sis4"
+		template = pi_playboy_sister_character_template
+		father = scope:pi_father
+		mother = scope:pi_mother
+		employer = scope:pi_playboy
+		save_scope_as = pi_sister4
+	}
+	scope:pi_sister1 = {
+		marry = scope:pi_playboy
+	}
+	scope:pi_playboy = {
+		make_concubine = scope:pi_sister2
+	}
+	scope:pi_playboy = {
+		make_concubine = scope:pi_sister3
+	}
+	scope:pi_playboy = {
+		make_concubine = scope:pi_sister4
+	}
 }
