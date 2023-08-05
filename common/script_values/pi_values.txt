@@ -1,1 +1,1 @@
-pi_playboy_appearance_base_chance = 1000
+pi_playboy_appearance_base_chance = 10
